@@ -1,0 +1,67 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  /* background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grey.png') repeat; */
+}
+
+.container {
+  padding: 0 10px 10px 10px;
+  position: relative;
+  /*
+  background: white;
+  box-shadow: 0 0 5px #000;
+  */
+}
+
+.row {
+  position: relative;
+}
+
+.span3 {
+  position: fixed;
+  border-right: 1px solid #333;
+  height: 100%;
+}
+
+.span9 {
+  
+}
+
+.span9 img {
+  /*
+  border: 10px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -ms-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -o-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  */
+  margin: 10px 0;
+  /*
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  */
+}
+
+
+
+@media (max-width: 767px) {
+  .span3 {
+    border-bottom: 1px solid #333;
+    position: relative;
+    border-right: none;
+  }
+}
+
+
+
+
+
+
