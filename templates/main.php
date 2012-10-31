@@ -22,6 +22,7 @@
 	<meta property="og:site_name" content="{{title}}"/>
 	<meta property="og:admins" content="90408241,503843067"/>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
@@ -33,9 +34,12 @@
   <div class="container">
     <div class="row">
       <div class="span3" id="sidebar">
-        <h2>Adventure</h2>
+        <img src="/img/logo.png"/>
+        <p>We are <a href="http://davefearon.com" target="_blank">Dave</a> and <a href="http://palinaklimava.com" target="_blank">Palina</a> and this blog was inspired by our journey from Ottawa, Ontario, Canada, to San Francisco, California, USA.</p>
+        <br><br>
+        <p>Made with <i class="icon-heart"></i> by <a href="http://davefearon.com" target="_blank">Dave</a> and <a href="http://palinaklimava.com" target="_blank">Palina</a></p>
       </div>
-      <div id="blog" class="span9 pull-right">
+      <div id="articles" class="span9">
         <?php
           $count = count( $articles );
           $i = 0;
@@ -48,12 +52,6 @@
           }
         ?>
       </div>
-      
-      <footer class="span9 pull-right">
-        <hr>
-        
-        <p>Made with <i class="icon-heart"></i> by <a href="http://davefearon.com" target="_blank">Dave</a> and <a href="http://palinaklimava.com" target="_blank">Palina</a></p>
-      </footer>
     </div>
   </div> <!-- /container -->
   

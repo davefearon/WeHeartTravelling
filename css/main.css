@@ -1,37 +1,123 @@
-
-
 /* ==========================================================================
-   Author's custom styles
+   Dave's custom styles
    ========================================================================== */
 
-body {
-  /* background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grey.png') repeat; */
+@font-face {
+	font-family: 'alluraregular';
+	src: url('../fonts/allura-regular-webfont.eot');
+	src: url('../fonts/allura-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/allura-regular-webfont.woff') format('woff'),
+			 url('../fonts/allura-regular-webfont.ttf') format('truetype'),
+			 url('../fonts/allura-regular-webfont.svg#alluraregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansCondensedLight';
+	src: url('../fonts/OpenSans-CondLight-webfont.eot');
+	src: url('../fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+			 url('../fonts/OpenSans-CondLight-webfont.ttf') format('truetype'),
+			 url('../fonts/OpenSans-CondLight-webfont.svg#OpenSansCondensedLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansCondensedBold';
+	src: url('../fonts/OpenSans-CondBold-webfont.eot');
+	src: url('../fonts/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/OpenSans-CondBold-webfont.woff') format('woff'),
+			 url('../fonts/OpenSans-CondBold-webfont.ttf') format('truetype'),
+			 url('../fonts/OpenSans-CondBold-webfont.svg#OpenSansCondensedBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+  color: #545454;
+	font: 18px/22px 'OpenSansCondensedLight', Arial, sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: 18px/22px 'OpenSansCondensedBold', Arial, sans-serif;
+  color: #00d1cf;
+}
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.icon-heart {
+  color: #00d1cf;
+  background-image: none;
 }
 
 .container {
-  padding: 0 10px 10px 10px;
+  padding: 0 0 10px 0;
   position: relative;
-  /*
-  background: white;
-  box-shadow: 0 0 5px #000;
-  */
+  margin: 0;
+  width: 100%;
 }
 
 .row {
   position: relative;
 }
 
-.span3 {
+#sidebar {
   position: fixed;
-  border-right: 1px solid #333;
   height: 100%;
+  background-color: #f5f5f5;
+  background-image: url('../img/divider_dot.png');
+  background-repeat: repeat-x;
+  background-position: 0 60px;
+  padding: 10px;
+  text-align: center;
+}
+#sidebar img {
+  margin-bottom: 10px;
+}
+#sidebar p {
+  text-align: left;
 }
 
-.span9 {
+#articles {
   
 }
 
-.span9 img {
+article {
+  padding: 10px;
+  background-image: url('../img/divider_dot.png');
+  background-repeat: repeat-x;
+  background-position: 0 60px;
+}
+article h2.date {
+  font: 27px/40px 'OpenSansCondensedLight', Arial, sans-serif;
+  margin-bottom: 15px;
+}
+article img {
   /*
   border: 10px solid #ffffff;
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -50,13 +136,28 @@ body {
   */
 }
 
+.container {
+  width: 100%;
+}
 
+
+
+@media (max-width: 979px) and (min-width: 768px) {
+  #sidebar {
+    background-position: 0 55px;
+  }
+  
+  article {
+    background-position: 0 55px;
+  }
+  article h2.date {
+    line-height: 30px;
+  }
+}
 
 @media (max-width: 767px) {
-  .span3 {
-    border-bottom: 1px solid #333;
+  #sidebar {
     position: relative;
-    border-right: none;
   }
 }
 
