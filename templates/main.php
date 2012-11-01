@@ -36,7 +36,7 @@
       <div class="span3" id="sidebar">
         <img src="/img/logo.png"/>
         <p>We are <a href="http://davefearon.com" target="_blank">Dave</a> and <a href="http://palinaklimava.com" target="_blank">Palina</a> and this blog was inspired by our journey from Ottawa, Ontario, Canada, to San Francisco, California, USA.</p>
-        <h3><a href="//twitter.com/#DaveOnTheRoad" target="_blank">Twitter</a></h3>
+        <h3><a href="//twitter.com/search/realtime?q=%23daveontheroad" target="_blank">Twitter</a></h3>
         <p>Made with <i class="icon-heart"></i> by <a href="http://davefearon.com" target="_blank">Dave</a> and <a href="http://palinaklimava.com" target="_blank">Palina</a></p>
       </div>
       <div id="articles" class="span9">
