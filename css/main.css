@@ -70,6 +70,12 @@ h6 {
   line-height: 20px;
 }
 
+a, a:visited, a:active {
+  color: #00d1cf;
+}
+a:hover {
+  color: #005654;
+}
 .icon-heart {
   color: #00d1cf;
   background-image: none;
@@ -100,6 +106,12 @@ h6 {
   margin-bottom: 10px;
 }
 #sidebar p {
+  text-align: left;
+}
+#sidebar h3 {
+  font: 27px/40px 'OpenSansCondensedLight', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
   text-align: left;
 }
 

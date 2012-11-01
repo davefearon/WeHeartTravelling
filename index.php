@@ -33,13 +33,15 @@ $app->get('/', function () use ($app) {
       $content = file_get_contents('./articles/'. $file->getFilename());
       $c = (array) json_decode($content);
       
-      $mustache = new Mustache_Engine(array(
-        'loader' => new Mustache_Loader_FilesystemLoader('./templates'),
-      ));
-      
-      $article = $mustache->render("article", $c);
-      
-      $articles[strtotime($c['date'])] = $article;
+      if( $c['published'] === true ) {
+         $mustache = new Mustache_Engine(array(
+          'loader' => new Mustache_Loader_FilesystemLoader('./templates'),
+        ));
+        
+        $article = $mustache->render("article", $c);
+        
+        $articles[strtotime($c['date'])] = $article;
+      }
     }
   }
   
